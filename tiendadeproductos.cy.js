@@ -7,7 +7,7 @@ describe("Test suite -- Conjunto de Pruebas par la pagina TIENDA DE PRODUCTOS", 
 })
 
 
-    it("1- Validar la transacción correcta del producto Samsung Galaxy S6", ()  => {
+    it("CP1- Validar la transacción correcta del producto Samsung Galaxy S6", ()  => {
        
         cy.get("#nava").should("be.visible")
         cy.get(":nth-child(1) > .card > .card-block").should("be.visible")
@@ -33,7 +33,7 @@ describe("Test suite -- Conjunto de Pruebas par la pagina TIENDA DE PRODUCTOS", 
 
 
 
-    it.only("2- Seleccionar Nokia Lumia 1520 Agregar al carrito y Confirmar que se agregó el producto,eliminar el producto y confirmar que se eliminó el producto", ()  => {
+    it("CP2- Seleccionar Nokia Lumia 1520 Agregar al carrito y Confirmar que se agregó el producto,eliminar el producto y confirmar que se eliminó el producto", ()  => {
        
         cy.get("#nava").should("be.visible")
         cy.get(":nth-child(2) > .card > .card-block").should("be.visible")
